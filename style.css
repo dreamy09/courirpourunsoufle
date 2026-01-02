@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #49aeb0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 20px 40px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  font-weight: 800;
+}
+
+/* Cards */
+.card {
+  display: block;
+  background: white;
+  color: #0071ce;
+  text-decoration: none;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  font-size: 15px;
+  line-height: 1.4;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Social icons */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.social-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+/* Instagram gradient */
+.social-circle.instagram i {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Facebook */
+.social-circle.facebook {
+  color: #1877F2;
+}
+
+/* Email */
+.social-circle.email {
+  color: #49aeb0;
+}
+
+.social-circle:hover {
+  transform: scale(1.15);
+}
